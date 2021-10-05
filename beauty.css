@@ -1,0 +1,37 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul, #one {
+  list-style-type: none;
+}
+#one 
+{
+  margin: 0;
+  padding: 0;
+  
+}
+.first {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  margin-left:-20px;
+
+}
+.first::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+.first-down::before {
+  transform: rotate(90deg);
+}
+.nested {
+  display: none;
+}
+.active {
+  display: block;
+}
